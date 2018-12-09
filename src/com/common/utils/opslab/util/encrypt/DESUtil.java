@@ -54,11 +54,4 @@ public class DESUtil {
         return new String(decryptData, encoding);
     }
 
-
-
-
-
-
-
-
 }

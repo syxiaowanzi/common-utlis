@@ -3,14 +3,14 @@ package com.common.utils.opslab.util;
 import java.io.ByteArrayOutputStream;
 
 /**
- * 常用类型转换
+ * 	常用类型转换
  */
 public final class ConvertUtil {
 
     private final static String hexStr = "0123456789ABCDEF";
 
     /**
-     * 短整型与字节的转换
+     * 	短整型与字节的转换
      */
     public final static byte[] shortToByte(short number) {
         int temp = number;
@@ -25,7 +25,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 字节的转换与短整型
+     * 	字节的转换与短整型
      */
     public final static short byteToShort(byte[] b) {
         short s;
@@ -38,7 +38,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 整型与字节数组的转换
+     * 	整型与字节数组的转换
      */
     public final static byte[] intToByte(int i) {
         byte[] bt = new byte[4];
@@ -50,7 +50,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 整型数组转换为字节数组的转换
+     * 	整型数组转换为字节数组的转换
      *
      * @param arr 整型数组
      */
@@ -96,7 +96,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 字节数组和整型的转换
+     * 	字节数组和整型的转换
      */
     public final static int bytesToInt(byte[] bytes) {
         int num = bytes[0] & 0xFF;
@@ -107,7 +107,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 字节数组和长整型的转换
+     * 	字节数组和长整型的转换
      */
     public final static byte[] longToByte(long number) {
         long temp = number;
@@ -122,7 +122,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 字节数组和长整型的转换
+     * 	字节数组和长整型的转换
      */
     public final static long byteToLong(byte[] b) {
         long s;
@@ -146,7 +146,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 将byte转换为对应的二进制字符串
+     * 	将byte转换为对应的二进制字符串
      *
      * @param src 要转换成二进制字符串的byte值
      */
@@ -160,7 +160,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 将十六进制字符串转为二进制字符串
+     * 	将十六进制字符串转为二进制字符串
      *
      * @param hexStr 十六进制字符串
      */
@@ -176,7 +176,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 将二进制转换为十六进制字符输出
+     * 	将二进制转换为十六进制字符输出
      *
      * @param bytes bytes数组
      */
@@ -194,7 +194,7 @@ public final class ConvertUtil {
     }
 
     /**
-     * 把16进制字符串转换成字节数组
+     * 	把16进制字符串转换成字节数组
      *
      * @param hexString 16进制字符串
      * @return byte[]

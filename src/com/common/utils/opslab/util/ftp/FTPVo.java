@@ -1,7 +1,7 @@
 package com.common.utils.opslab.util.ftp;
 
 /**
- * 用于包装FTP的相关的信息
+ * 	用于包装FTP的相关的信息
  */
 public class FTPVo {
     private String  hostName;

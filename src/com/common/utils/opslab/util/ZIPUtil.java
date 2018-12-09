@@ -7,11 +7,11 @@ import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 /**
- * 压缩文档相关的工具类
+ * 	压缩文档相关的工具类
  */
 public final class ZIPUtil {
     /**
-     * 文档压缩
+     * 	文档压缩
      *
      * @param file 需要压缩的文件或目录
      * @param dest 压缩后的文件名称
@@ -58,7 +58,7 @@ public final class ZIPUtil {
     }
 
     /**
-     * 文档解压
+     * 	文档解压
      *
      * @param source 需要解压缩的文档名称
      * @param path   需要解压缩的路径

@@ -73,7 +73,7 @@ public class HttpClientUtil {
 	}
 	
 	/**
-	 * 根据URL，初始化连接
+	 * 	根据URL，初始化连接
 	 * @param url
 	 * @return
 	 * @throws IOException
@@ -107,7 +107,7 @@ public class HttpClientUtil {
 	
 	
     /**
-     * 发送HTTP(POST)请求
+     *	 发送HTTP(POST)请求
      *
      * @param url
      * @param propsMap 发送的参数
@@ -180,7 +180,7 @@ public class HttpClientUtil {
     }
     
     /**
-     * 流中转化字节
+     * 	流中转化字节
      * @param instream
      * @return
      * @throws IOException
@@ -197,7 +197,7 @@ public class HttpClientUtil {
 	}
     
     /**
-     * 流转为字符串
+     * 	流转为字符串
      * @param instream
      * @return
      * @throws IOException
@@ -213,7 +213,7 @@ public class HttpClientUtil {
     }
     
     /**
-     * 读取request中的流
+     * 	读取request中的流
      * @param request
      * @return
      * @throws IOException

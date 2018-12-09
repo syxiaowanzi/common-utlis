@@ -1,12 +1,12 @@
 package com.common.utils.opslab.util;
 
 /**
- * 文件名及文件路径相关的操作
+ * 	文件名及文件路径相关的操作
  */
 public final class FilePathUtil {
 
     /**
-     * 判断是否符是合法的文件路径
+     * 	判断是否符是合法的文件路径
      *
      * @param path 需要处理的文件路径
      */
@@ -18,7 +18,7 @@ public final class FilePathUtil {
     }
 
     /**
-     * 返回一个通用的文件路径
+     * 	返回一个通用的文件路径
      *
      * @param file 需要处理的文件路径
      * @return

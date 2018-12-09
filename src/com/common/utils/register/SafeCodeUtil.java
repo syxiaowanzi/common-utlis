@@ -22,13 +22,13 @@ public class SafeCodeUtil {
     private int lineSize = 30;//干扰线数量
     private int stringNum = 4;//随机产生字符数量
     /*
-     * 获得字体
+     *	 获得字体
      */
     private Font getFont(){
         return new Font("Fixedsys",Font.CENTER_BASELINE,18);
     }
     /*
-     * 获得颜色
+     * 	获得颜色
      */
     private Color getRandColor(int fc,int bc){
         if(fc > 255)
@@ -41,7 +41,7 @@ public class SafeCodeUtil {
         return new Color(r,g,b);
     }
     /**
-     * 生成随机图片
+     * 	生成随机图片
      */
     public void getRandcode(HttpServletRequest request,
             HttpServletResponse response) {
@@ -71,7 +71,7 @@ public class SafeCodeUtil {
         }
     }
     /*
-     * 绘制字符串
+     * 	绘制字符串
      */
     private String drowString(Graphics g,String randomString,int i){
         g.setFont(getFont());
@@ -83,7 +83,7 @@ public class SafeCodeUtil {
         return randomString;
     }
     /*
-     * 绘制干扰线
+     * 	绘制干扰线
      */
     private void drowLine(Graphics g){
         int x = random.nextInt(width);
@@ -93,7 +93,7 @@ public class SafeCodeUtil {
         g.drawLine(x, y, x+xl, y+yl);
     }
     /*
-     * 获取随机的字符
+     * 	获取随机的字符
      */
     public String getRandomString(int num){
         return String.valueOf(randString.charAt(num));

@@ -1,12 +1,12 @@
 package com.common.utils.opslab.util;
 
 /**
- * 获取double类型数据的小数长度
+ * 	获取double类型数据的小数长度
  */
 public class ArrayUtil {
 
     /**
-     * 获取一个double类型的数字的小数位有多长
+     * 	获取一个double类型的数字的小数位有多长
      * @param dd
      * @return
      */
@@ -21,7 +21,7 @@ public class ArrayUtil {
     }
     
     /**
-     * 获取一个double类型的数字的小数位有多长
+     * 	获取一个double类型的数字的小数位有多长
      * @param arr double类型的数组
      * @return integer类型长度值
      */

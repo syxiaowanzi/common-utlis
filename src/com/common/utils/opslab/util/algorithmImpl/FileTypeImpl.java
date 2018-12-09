@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * 利用文件头来实现的一些文件类型的方法封装
+ * 	利用文件头来实现的一些文件类型的方法封装
  */
 public class FileTypeImpl {
 

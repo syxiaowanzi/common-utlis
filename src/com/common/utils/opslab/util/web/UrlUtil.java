@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 
 /**
  * URL相关的工具类
- * 以下工具类来自开源项目jodd
+ * 	以下工具类来自开源项目jodd
  * <p/>
  * Here is an example of full URL:
  * {@literal https://jodd:ddoj@www.jodd.org:8080/file;p=1?q=2#third}.
@@ -629,7 +629,7 @@ public final class UrlUtil {
 
 
     /**
-     * 获取HTTPrequest的请求参数
+     * 	获取HTTPrequest的请求参数
      * @param request http请求
      */
     public static Map print(HttpServletRequest request) {
@@ -650,7 +650,7 @@ public final class UrlUtil {
 
 
     /**
-     * 解析字符串返回map键值对(例：a=1&b=2 => a=1,b=2)
+     * 	解析字符串返回map键值对(例：a=1&b=2 => a=1,b=2)
      *
      * @param query   源参数字符串
      * @param split1  键值对之间的分隔符（例：&）
@@ -706,7 +706,7 @@ public final class UrlUtil {
     }
 
     /**
-     * 解析http请求URI
+     * 	解析http请求URI
      * @param queryUri http请求的uri
      */
     public static Map<String,String> httpParseQuery(String queryUri){

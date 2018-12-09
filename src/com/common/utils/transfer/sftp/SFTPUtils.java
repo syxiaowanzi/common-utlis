@@ -19,7 +19,7 @@ public class SFTPUtils {
 		super();
 	}
 	/**
-	 * 连接sftp
+	 * 	连接sftp
 	 */
 	public static void connection(){
         try {
@@ -41,7 +41,7 @@ public class SFTPUtils {
 		}
 	}
 	/**
-	 * 从sftp下载文件
+	 * 	从sftp下载文件
 	 */
 	public static void downFile(String sftpPath,String localPath){
 		SFTPUtils.connection();

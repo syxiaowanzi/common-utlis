@@ -7,13 +7,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 
 /**
- * 图片比较
+ * 	图片比较
  */
 public final class ImageCompare {
     private static Logger logger = Logger.getLogger(ImageCompare.class);
 
     /**
-     * 改变成二进制码
+     * 	改变成二进制码
      *
      * @param file
      * @return
@@ -48,7 +48,7 @@ public final class ImageCompare {
     }
 
     /**
-     * 比较俩个图片的相似度
+     * 	比较俩个图片的相似度
      *
      * @param image1
      * @param image2

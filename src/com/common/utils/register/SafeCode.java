@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 生成验证码
+ * 	生成验证码
  * @author wangming
  */
 public class SafeCode extends HttpServlet {

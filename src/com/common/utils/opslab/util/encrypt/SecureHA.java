@@ -23,8 +23,4 @@ public class SecureHA {
         }
         return sha.toString(32);
     }
-
-
-
-
 }

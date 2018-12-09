@@ -12,12 +12,12 @@ import java.io.OutputStream;
 import java.util.Random;
 
 /**
- * 具体用于实现生成验证码图片的方法
+ * 	具体用于实现生成验证码图片的方法
  */
 public final class CaptchaUtil {
     protected static Font font = new Font("Verdana", Font.ITALIC|Font.BOLD, 28);   // 字体
     /**
-     * 产生0--num的随机数,不包括num
+     * 	产生0--num的随机数,不包括num
      * @param num 数字
      * @return int 随机数字
      */
@@ -26,7 +26,7 @@ public final class CaptchaUtil {
         return (new Random()).nextInt(num);
     }
     /**
-     * 给定范围获得随机颜色
+     * 	给定范围获得随机颜色
      * @return Color 随机颜色
      */
     protected static Color color(int fc, int bc)
@@ -114,7 +114,7 @@ public final class CaptchaUtil {
     }
 
     /**
-     * 画随机码图
+     * 	画随机码图
      * @param fontcolor 随机字体颜色
      * @param strs 字符数组
      * @param flag 透明度使用
@@ -144,7 +144,7 @@ public final class CaptchaUtil {
     }
 
     /**
-     * 获取透明度,从0到1,自动计算步长
+     * 	获取透明度,从0到1,自动计算步长
      * @return float 透明度
      */
     private static float getAlpha(int i,int j,int len) {

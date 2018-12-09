@@ -6,14 +6,14 @@ import com.common.utils.opslab.util.StringUtil;
 import java.io.UnsupportedEncodingException;
 
 /**
- * 提供Web相关的个工具类
+ * 	提供Web相关的个工具类
  */
 public final class WebUtil {
 
 
 
     /**
-     * 对字符串进行编码
+     * 	对字符串进行编码
      *
      * @param str 需要处理的字符串
      * @param encoding 编码方式
@@ -28,7 +28,7 @@ public final class WebUtil {
     }
 
     /**
-     * 对字符串进行解码
+     *	 对字符串进行解码
      *
      * @param str 需要处理的字符串
      * @param encoding 解码方式
@@ -87,7 +87,5 @@ public final class WebUtil {
         html = html.replaceAll("&gt;", ">");
         return html;
     }
-
-
 
 }

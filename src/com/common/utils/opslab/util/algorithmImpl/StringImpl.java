@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 
 /**
- * 对比俩个字符串的相似度
+ * 	对比俩个字符串的相似度
  */
 public class StringImpl {
     //第一种实现方式
@@ -58,7 +58,7 @@ public class StringImpl {
     }
 
     /**
-     * 快速比较俩个字符串的相似度
+     *	 快速比较俩个字符串的相似度
      *
      * @param strA 较长的字符串
      * @param strB 较短的字符串
@@ -121,7 +121,7 @@ public class StringImpl {
     }
 
     /**
-     * 获取字符串的相似度
+     *	 获取字符串的相似度
      *
      * @param str
      * @param target
@@ -135,7 +135,7 @@ public class StringImpl {
 
 
     /**
-     * 获取字符串编码
+     * 	获取字符串编码
      *
      * @param str 需要处理的字符串
      */

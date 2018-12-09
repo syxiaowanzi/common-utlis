@@ -10,13 +10,13 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * 提供一些常用的属性文件相关的方法
+ * 	提供一些常用的属性文件相关的方法
  */
 public final class PropertiesUtil {
     public static Logger logger = Logger.getLogger(PropertiesUtil.class);
 
     /**
-     * 从系统属性文件中获取相应的值
+     * 	从系统属性文件中获取相应的值
      *
      * @param key key
      * @return 返回value
@@ -26,7 +26,7 @@ public final class PropertiesUtil {
     }
 
     /**
-     * 根据Key读取Value
+     * 	根据Key读取Value
      *
      * @param filePath 属性文件
      * @param key      需要读取的属性
@@ -59,7 +59,7 @@ public final class PropertiesUtil {
         return map;
     }
     /**
-     * 读取Properties的全部信息
+     * 	读取Properties的全部信息
      *
      * @param filePath 读取的属性文件
      * @return 返回所有的属性 key:value<>key:value
@@ -76,7 +76,7 @@ public final class PropertiesUtil {
     }
 
     /**
-     * 写入Properties信息
+     * 	写入Properties信息
      *
      * @param filePath 写入的属性文件
      * @param pKey     属性名称

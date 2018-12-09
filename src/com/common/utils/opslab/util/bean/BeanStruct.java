@@ -3,7 +3,7 @@ package com.common.utils.opslab.util.bean;
 import java.lang.reflect.Method;
 
 /**
- * 存放字段属性信息
+ *	 存放字段属性信息
  */
 public class BeanStruct {
 

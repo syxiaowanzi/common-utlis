@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * ftp工具类
  * @author wangming
- * 时间:2016-6-12 15:05:34
+ * 	时间:2016-6-12 15:05:34
  *
  */
 public class FTPClientUtil {
@@ -30,7 +30,7 @@ public class FTPClientUtil {
 	 }
 	 
 	/**
-	 * 使用详细信息进行服务器连接
+	 * 	使用详细信息进行服务器连接
      * @param server：服务器地址名称
      * @param port：端口号
      * @param user：用户名
@@ -49,7 +49,7 @@ public class FTPClientUtil {
 	 
 	 
      /**
-      * 切换服务器的文件目录
+      * 	切换服务器的文件目录
       * @param remotePath
       */
 	 public void changeDirectory(String remotePath){
@@ -72,7 +72,7 @@ public class FTPClientUtil {
 	 }
 	 
 	/**
-     * 检查目录在服务器上是否存在 true：存在  false：不存在
+     * 	检查目录在服务器上是否存在 true：存在  false：不存在
      * @param path
      * @return
      * @throws IOException
@@ -112,7 +112,7 @@ public class FTPClientUtil {
     }  
 	 
 	 /**
-	  * 从ftp服务器上下载文件到本地
+	  *	 从ftp服务器上下载文件到本地
 	  * @param remotePath 服务器文件的路径(包含文件名)
 	  * @param localpath 下载到本地的路径目录
 	  * @return  boolean
@@ -147,7 +147,7 @@ public class FTPClientUtil {
 	 }
 	 
 	 /**
-	  * 上传本地文件到服务器
+	  * 	上传本地文件到服务器
 	  * @param ftpPath 服务器的路径
 	  * @param sendTime 发送时间
 	  * @param localFilePath 本地上传的文件路径(包含文件)
@@ -200,7 +200,7 @@ public class FTPClientUtil {
 	 }
 	 
 	 /**
-	  * 上传本地文件到服务器（目录有变化，上传文件前一级加一层目录） 税延产品
+	  * 	上传本地文件到服务器（目录有变化，上传文件前一级加一层目录） 税延产品
 	  * @param ftpPath 服务器的路径
 	  * @param sendTime 发送时间
 	  * @param localFilePath 本地上传的文件路径(包含文件)
@@ -261,7 +261,7 @@ public class FTPClientUtil {
 		 
 	 }
 	 /**
-	  * 上传 发票资料，其他资料 
+	  * 	上传 发票资料，其他资料 
 	  * 
 	  * /app/xml/MidPlat/EBWebSite/insjpg/201608/29/受理号_rpt  发票资料
 	  * /app/xml/MidPlat/EBWebSite/insjpg/201608/29/受理号_oth  其他资料   
@@ -344,7 +344,7 @@ public class FTPClientUtil {
 		 
 	 }
     /**
-     * 关闭连接
+     * 	关闭连接
      * @throws IOException
      */
     public void closeServer(){  
@@ -358,7 +358,7 @@ public class FTPClientUtil {
     }
 	 
     /**
-     * 设置编码格式
+     * 	设置编码格式
      * @param encoding
      */
     public void setCharset(String encoding){

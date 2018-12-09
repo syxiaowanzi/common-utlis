@@ -2,7 +2,7 @@ package com.common.utils.opslab.util.image;
 
 import java.awt.Color;
 /**
- * 颜色相关的工具类
+ * 	颜色相关的工具类
  */
 public final class ColorUtil {
     /**

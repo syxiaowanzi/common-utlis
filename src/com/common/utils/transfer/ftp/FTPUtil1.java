@@ -22,7 +22,7 @@ public class FTPUtil1 {
       
     
     /**
-     * 利用FtpConfig进行服务器连接
+     * 	利用FtpConfig进行服务器连接
      * @param ftpConfig 参数配置Bean类
      * @throws SocketException
      * @throws IOException
@@ -34,7 +34,7 @@ public class FTPUtil1 {
     }  
       
     /**
-     * 使用详细信息进行服务器连接
+     * 	使用详细信息进行服务器连接
      * @param server：服务器地址名称
      * @param port：端口号
      * @param user：用户名
@@ -67,8 +67,8 @@ public class FTPUtil1 {
     }  
     
     /**
-     * 设置传输文件类型:FTP.BINARY_FILE_TYPE | FTP.ASCII_FILE_TYPE  
-     * 二进制文件或文本文件
+     * 	设置传输文件类型:FTP.BINARY_FILE_TYPE | FTP.ASCII_FILE_TYPE  
+     * 	二进制文件或文本文件
      * @param fileType
      * @throws IOException
      */
@@ -77,7 +77,7 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 关闭连接
+     * 	关闭连接
      * @throws IOException
      */
     public void closeServer() throws IOException {  
@@ -88,7 +88,7 @@ public class FTPUtil1 {
     }
     
     /**
-     * 转移到FTP服务器工作目录
+     * 	转移到FTP服务器工作目录
      * @param path
      * @return
      * @throws IOException
@@ -98,7 +98,7 @@ public class FTPUtil1 {
     }  
     
     /**
-     * 在服务器上创建目录
+     * 	在服务器上创建目录
      * @param pathName
      * @return
      * @throws IOException
@@ -108,7 +108,7 @@ public class FTPUtil1 {
     }  
     
     /**
-     * 在服务器上删除目录
+     * 	在服务器上删除目录
      * @param path
      * @return
      * @throws IOException
@@ -118,7 +118,7 @@ public class FTPUtil1 {
     }  
       
     /**
-     * 删除所有文件和目录
+     *	 删除所有文件和目录
      * @param path
      * @param isAll true:删除所有文件和目录
      * @return
@@ -154,7 +154,7 @@ public class FTPUtil1 {
     }  
     
     /**
-     * 检查目录在服务器上是否存在 true：存在  false：不存在
+     * 	检查目录在服务器上是否存在 true：存在  false：不存在
      * @param path
      * @return
      * @throws IOException
@@ -173,7 +173,7 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 得到文件列表,listFiles返回包含目录和文件，它返回的是一个FTPFile数组
+     * 	得到文件列表,listFiles返回包含目录和文件，它返回的是一个FTPFile数组
      * listNames()：只包含目录的字符串数组
      * String[] fileNameArr = ftpClient.listNames(path); 
      * @param path:服务器上的文件目录:/DF4
@@ -200,7 +200,7 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 删除服务器上的文件
+     * 	删除服务器上的文件
      * @param pathName
      * @return
      * @throws IOException
@@ -210,8 +210,8 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 上传文件到ftp服务器
-     * 在进行上传和下载文件的时候，设置文件的类型最好是：
+     * 	上传文件到ftp服务器
+     * 	在进行上传和下载文件的时候，设置文件的类型最好是：
      * ftpUtil.setFileType(FtpUtil.BINARY_FILE_TYPE)
      * localFilePath:本地文件路径和名称
      * remoteFileName:服务器文件名称
@@ -238,7 +238,7 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 上传文件到ftp服务器，上传新的文件名称和原名称一样
+     *	 上传文件到ftp服务器，上传新的文件名称和原名称一样
      * @param fileName：文件名称
      * @return
      * @throws IOException
@@ -248,7 +248,7 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 上传文件到ftp服务器
+     * 	上传文件到ftp服务器
      * @param iStream 输入流
      * @param newName 新文件名称
      * @return
@@ -271,7 +271,7 @@ public class FTPUtil1 {
     }  
   
     /**
-     * 从ftp服务器上下载文件到本地
+     *	 从ftp服务器上下载文件到本地
      * @param remoteFileName：ftp服务器上文件名称
      * @param localFileName：本地文件名称
      * @return
@@ -298,7 +298,7 @@ public class FTPUtil1 {
     }  
       
     /**
-     * 从ftp服务器上下载文件到本地
+     * 	从ftp服务器上下载文件到本地
      * @param sourceFileName：服务器资源文件名称
      * @return InputStream 输入流
      * @throws IOException
@@ -350,7 +350,7 @@ public class FTPUtil1 {
     
     
     /**
-     * 下载文件
+     * 	下载文件
      * @param directoryString
      * @return
      */
@@ -389,8 +389,4 @@ public class FTPUtil1 {
             }    
         return success;    
     }
-    
-    
-    
 }
-	
