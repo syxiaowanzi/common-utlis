@@ -15,7 +15,23 @@ public final class CharUtil {
     public static char toChar(byte b) {
         return (char) (b & 0xFF);
     }
-
+    
+    public static void main(String[] args) {
+    	Byte by1 = new Byte("123");
+        Byte by2 = new Byte("123");
+        int length = by1.SIZE;
+         
+        int max = by2.MAX_VALUE;
+        int min = by2.MIN_VALUE;
+         
+        System.out.println(by1);
+        System.out.println(by2);
+        System.out.println("The length is "+length);
+        System.out.println("MAX:"+max+" MIN"+min);
+        byte temp = (byte)241; // 241的二进制表示为11110001（补码），其中第一位为符号位，那么剩余的计算结果为15，最终结果为-15
+        System.out.println(temp);
+	}
+    
     /**
      * Converts char array into byte array by stripping the high byte of each character.
      */
@@ -384,6 +400,5 @@ public final class CharUtil {
         }
         return c;
     }
-
 
 }

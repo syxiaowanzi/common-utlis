@@ -2,6 +2,7 @@ package com.common.utils.opslab.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.Map;
 
@@ -112,4 +113,19 @@ public final class CheckUtil {
         }
         return true;
     }
+    
+    public static void main(String[] args) {
+    	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+			//sdf.parse("1234-2222-1221");
+        	Calendar ca = Calendar.getInstance();
+        	System.out.println(sdf.format(ca.getTimeInMillis()));
+			System.out.println(sdf.parse("123-232-111").getYear());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	//System.out.println(isDate("1234-343-22 232:1123:111 232", "yyyy-MM-dd HH:ss:mm SSS"));
+    	
+	}
 }

@@ -21,7 +21,7 @@ public class DateUtil {
 		Calendar cl = Calendar.getInstance();
 		Long time = cl.getTimeInMillis();
 		//int times = time.intValue();//long转换成int
-		SimpleDateFormat sdf=new SimpleDateFormat(format);
+		SimpleDateFormat sdf= new SimpleDateFormat(format);
 		String dataString = sdf.format(time);
 		return dataString;
 	}
@@ -40,11 +40,11 @@ public class DateUtil {
 	 */
 	public static String getAccountDate(){
 		Date date = new Date();
-		Calendar c=Calendar.getInstance();
+		Calendar c = Calendar.getInstance();
 		c.setTime(date);
 		c.add(Calendar.DATE,-1);
 		date = c.getTime();
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		String datestr = sdf.format(date);
 		return datestr;
 	}
@@ -52,11 +52,11 @@ public class DateUtil {
 	 * 	获取给定日期前一天的日期
 	 */
 	public static String getAccountDate(Date date){
-		Calendar c=Calendar.getInstance();
+		Calendar c = Calendar.getInstance();
 		c.setTime(date);
 		c.add(Calendar.DATE,-1);
 		date = c.getTime();
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		String datestr = sdf.format(date);
 		return datestr;
 	}
