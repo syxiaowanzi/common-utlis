@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
- * 读取xml数据
+ * 	读取xml数据
  * @author wangming
  * return String 类型数据
  */

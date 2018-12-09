@@ -4,12 +4,12 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 /**
- * 图片相关的操作类
+ * 	图片相关的操作类
  */
 public final class ImageUtil {
 
     /**
-     * 重新设定图像的长高宽
+     * 	重新设定图像的长高宽
      * @param originalImage 图像数据
      * @param width 宽
      * @param height 高
@@ -30,8 +30,8 @@ public final class ImageUtil {
     }
 
     /**
-     * 按照给点的比例放大图像
-     * 当缩减比例小于等于0时不发生任何变化
+     * 	按照给点的比例放大图像
+     * 	当缩减比例小于等于0时不发生任何变化
      * @param originalImage 图像数据
      * @param withdRatio 宽度缩减比例
      * @param heightRatio 高度缩减比例
@@ -53,8 +53,8 @@ public final class ImageUtil {
         return newImage;
     }
     /**
-     * 按照给点的比例缩小图像
-     * 当缩减比例小于等于0时不发生任何变化
+     * 	按照给点的比例缩小图像
+     * 	当缩减比例小于等于0时不发生任何变化
      * @param originalImage 图像数据
      * @param withdRatio 宽度缩减比例
      * @param heightRatio 高度缩减比例

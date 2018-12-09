@@ -3,7 +3,7 @@ package com.common.utils.opslab.util.algorithmImpl;
 import com.common.utils.opslab.util.StringUtil;
 
 /**
- * 提供对字符串的全角->半角，半角->全角转换
+ * 	提供对字符串的全角->半角，半角->全角转换
  */
 public class BCConvert {
 
@@ -18,12 +18,12 @@ public class BCConvert {
     static final char DBC_CHAR_END = 126; // 半角~
 
     /**
-     * 全角对应于ASCII表的可见字符从！开始，偏移值为65281
+     * 	全角对应于ASCII表的可见字符从！开始，偏移值为65281
      */
     static final char SBC_CHAR_START = 65281; // 全角！
 
     /**
-     * 全角对应于ASCII表的可见字符到～结束，偏移值为65374
+     * 	全角对应于ASCII表的可见字符到～结束，偏移值为65374
      */
     static final char SBC_CHAR_END = 65374; // 全角～
 
@@ -33,19 +33,19 @@ public class BCConvert {
     static final int CONVERT_STEP = 65248; // 全角半角转换间隔
 
     /**
-     * 全角空格的值，它没有遵从与ASCII的相对偏移，必须单独处理
+     * 	全角空格的值，它没有遵从与ASCII的相对偏移，必须单独处理
      */
     static final char SBC_SPACE = 12288; // 全角空格 12288
 
     /**
-     * 半角空格的值，在ASCII中为32(Decimal)
+     * 	半角空格的值，在ASCII中为32(Decimal)
      */
     static final char DBC_SPACE = ' '; // 半角空格
 
     /**
      * <PRE>
-     * 半角字符->全角字符转换
-     * 只处理空格，!到˜之间的字符，忽略其他
+     * 	半角字符->全角字符转换
+     * 	只处理空格，!到˜之间的字符，忽略其他
      * </PRE>
      */
     public static String bj2qj(String src) {
@@ -71,8 +71,8 @@ public class BCConvert {
 
     /**
      * <PRE>
-     * 全角字符->半角字符转换
-     * 只处理全角的空格，全角！到全角～之间的字符，忽略其他
+     * 	全角字符->半角字符转换
+     * 	只处理全角的空格，全角！到全角～之间的字符，忽略其他
      * </PRE>
      */
     public static String qj2bj(String src) {

@@ -1,7 +1,7 @@
 package com.common.utils.opslab.util.encrypt;
 
 /**
- * Base32的编码和解码
+ * 	Base32的编码和解码
  */
 public final class Base32 {
     private static final String ERR_CANONICAL = "Invalid Base32 string";
@@ -18,7 +18,7 @@ public final class Base32 {
 
 
     /**
-     * 使用Base32进行编码
+     *	 使用Base32进行编码
      *
      * @param bytes
      * @return
@@ -77,7 +77,7 @@ public final class Base32 {
 
 
     /**
-     * 用Base32进行解码
+     * 	用Base32进行解码
      *
      * @param base32
      * @return

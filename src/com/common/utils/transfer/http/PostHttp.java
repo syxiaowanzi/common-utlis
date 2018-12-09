@@ -21,7 +21,7 @@ import javax.net.ssl.X509TrustManager;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 带证书的https请求工具类
+ *	 带证书的https请求工具类
  * @author wangming
  */
   
@@ -117,7 +117,7 @@ public class PostHttp {
     	  }
     }
     /**
-     * 初始化统一下单接口
+     * 	初始化统一下单接口
      * @return
      */
     public static String initURL(){
@@ -175,8 +175,4 @@ public class PostHttp {
 		}
 		*/
 	}
-
-    
-    
 }
-    	

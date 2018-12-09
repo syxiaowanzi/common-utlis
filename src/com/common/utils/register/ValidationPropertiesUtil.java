@@ -6,7 +6,7 @@ import java.util.Properties;
 /**
  * @author wangming
  * @version
- * 读取获取配置文件相关信息
+ * 	读取获取配置文件相关信息
  * */
 public class ValidationPropertiesUtil {
 	private static Properties  p = System.getProperties();

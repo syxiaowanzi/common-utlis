@@ -9,12 +9,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 提供些常用的字符串相关的工具方法
+ * 	提供些常用的字符串相关的工具方法
  */
 public final class StringUtil {
 
     /**
-     * 判断是否是空字符串 null和"" 都返回 true
+     * 	判断是否是空字符串 null和"" 都返回 true
      *
      * @param str 判断的字符串
      * @return 是否有效
@@ -24,7 +24,7 @@ public final class StringUtil {
     }
 
     /**
-     * 把string array or list用给定的符号symbol连接成一个字符串
+     * 	把string array or list用给定的符号symbol连接成一个字符串
      *
      * @param list   需要处理的列表
      * @param symbol 链接的符号
@@ -46,7 +46,7 @@ public final class StringUtil {
     }
 
     /**
-     * 判定第一个字符串是否等于的第二个字符串中的某一个值
+     * 	判定第一个字符串是否等于的第二个字符串中的某一个值
      *
      * @param str1 测试的字符串
      * @param str2 字符串数组(用,分割)
@@ -66,7 +66,7 @@ public final class StringUtil {
     }
 
     /**
-     * 判定第一个字符串是否等于的第二个字符串中的某一个值
+     * 	判定第一个字符串是否等于的第二个字符串中的某一个值
      *
      * @param str1  测试的字符串
      * @param str2  字符串数组
@@ -88,8 +88,8 @@ public final class StringUtil {
 
 
     /**
-     * 字符串省略截取
-     * 字符串截取到指定长度size+...的形式
+     * 	字符串省略截取
+     * 	字符串截取到指定长度size+...的形式
      *
      * @param subject 需要处理的字符串
      * @param size    截取的长度
@@ -104,7 +104,7 @@ public final class StringUtil {
 
 
     /**
-     * 截取字符串　超出的字符用symbol代替
+     * 	截取字符串　超出的字符用symbol代替
      *
      * @param str    需要处理的字符串
      * @param len    字符串长度
@@ -121,7 +121,7 @@ public final class StringUtil {
 
 
     /**
-     * 把string array or list用给定的符号symbol连接成一个字符串
+     * 	把string array or list用给定的符号symbol连接成一个字符串
      *
      * @param array  需要处理的字符串数组
      * @param symbol 链接的符号
@@ -142,7 +142,7 @@ public final class StringUtil {
     }
 
     /**
-     * 将一组字符才以指定的字符链接起来
+     * 	将一组字符才以指定的字符链接起来
      * @param linkStr 链接字符
      * @param strs  需要连接的动态参数
      * @return
@@ -161,7 +161,7 @@ public final class StringUtil {
 
 
     /**
-     * 隐藏邮件地址前缀。
+     *	 隐藏邮件地址前缀。
      *
      * @param email - EMail邮箱地址 例如: ssss@koubei.com 等等...
      * @return 返回已隐藏前缀邮件地址, 如 *********@koubei.com.
@@ -191,7 +191,7 @@ public final class StringUtil {
     }
 
     /**
-     * 截取字符串左侧的Num位截取到末尾
+     * 	截取字符串左侧的Num位截取到末尾
      *
      * @param str1 处理的字符串
      * @param num  开始位置
@@ -207,7 +207,7 @@ public final class StringUtil {
     }
 
     /**
-     * 截取字符串右侧第0位到第Num位
+     * 	截取字符串右侧第0位到第Num位
      *
      * @param str 处理的字符串
      * @param num 截取的位置
@@ -221,7 +221,7 @@ public final class StringUtil {
     }
 
     /**
-     * 根据指定的字符把源字符串分割成一个list
+     * 	根据指定的字符把源字符串分割成一个list
      *
      * @param src     处理的字符串
      * @param pattern 分割字符串
@@ -237,7 +237,7 @@ public final class StringUtil {
     }
 
     /**
-     * 格式化一个float
+     * 	格式化一个float
      *
      * @param format 要格式化成的格式 such as #.00, #.#
      * @return 格式化后的字符串
@@ -249,7 +249,7 @@ public final class StringUtil {
 
 
     /**
-     * 截取字符串左侧指定长度的字符串
+     * 	截取字符串左侧指定长度的字符串
      *
      * @param input 输入字符串
      * @param count 截取长度
@@ -264,7 +264,7 @@ public final class StringUtil {
     }
 
     /**
-     * 截取字符串右侧指定长度的字符串
+     * 	截取字符串右侧指定长度的字符串
      *
      * @param input 输入字符串
      * @param count 截取长度
@@ -282,7 +282,7 @@ public final class StringUtil {
 
 
     /**
-     * 全角字符变半角字符
+     * 	全角字符变半角字符
      *
      * @param str 需要处理的字符串
      * @return 处理后的字符串
@@ -295,7 +295,7 @@ public final class StringUtil {
     }
 
     /**
-     * 半角字符变全角字符
+     * 	半角字符变全角字符
      * @param str 需要处理的字符串
      * @return 处理后的字符串
      */
@@ -308,7 +308,7 @@ public final class StringUtil {
 
 
     /**
-     * 页面中去除字符串中的空格、回车、换行符、制表符
+     *	 页面中去除字符串中的空格、回车、换行符、制表符
      *
      * @param str 需要处理的字符串
      */
@@ -323,7 +323,7 @@ public final class StringUtil {
 
 
     /**
-     * 判断字符串数组中是否包含某字符串元素
+     * 	判断字符串数组中是否包含某字符串元素
      *
      * @param substring 某字符串
      * @param source    源字符串数组
@@ -343,7 +343,7 @@ public final class StringUtil {
 
 
     /**
-     * 字符串转换unicode.实现native2ascii.exe类似的功能
+     * 	字符串转换unicode.实现native2ascii.exe类似的功能
      *
      * @param string 需要处理的字符串
      */
@@ -357,7 +357,7 @@ public final class StringUtil {
     }
 
     /**
-     * 转字符串 实现native2ascii.exe类似的功能
+     * 	转字符串 实现native2ascii.exe类似的功能
      *
      * @param unicode 需要处理的字符串
      */
@@ -373,7 +373,7 @@ public final class StringUtil {
 
 
     /**
-     * 删除所有的标点符号
+     * 	删除所有的标点符号
      *
      * @param str 处理的字符串
      */
@@ -385,7 +385,7 @@ public final class StringUtil {
     }
 
     /**
-     * 字符串相似度比较(速度较快)
+     * 	字符串相似度比较(速度较快)
      */
     public  static double SimilarityRatio(String str1, String str2) {
         str1 = StringUtil.trimPunct(str1);
@@ -399,7 +399,7 @@ public final class StringUtil {
     }
 
     /**
-     * 字符串相似度比较(速度较快)
+     * 	字符串相似度比较(速度较快)
      */
     public  static double SimilarDegree(String str1, String str2) {
         str1 = StringUtil.trimPunct(str1);
@@ -416,7 +416,7 @@ public final class StringUtil {
 
 
     /**
-     * 获取字符串str在String中出现的次数
+     * 	获取字符串str在String中出现的次数
      *
      * @param string 处理的字符串
      * @param str 子字符串
@@ -436,7 +436,7 @@ public final class StringUtil {
 
 
     /**
-     * 替换一个出现的子串
+     * 	替换一个出现的子串
      *
      * @param s    source string
      * @param sub  substring to replace
@@ -452,7 +452,7 @@ public final class StringUtil {
 
 
     /**
-     * 替换最后一次出现的字串
+     * 	替换最后一次出现的字串
      * Replaces the very last occurrence of a substring with supplied string.
      *
      * @param s    source string
@@ -469,7 +469,7 @@ public final class StringUtil {
 
 
     /**
-     * 删除所有的子串
+     * 	删除所有的子串
      * Removes all substring occurrences from the string.
      *
      * @param s   source string
@@ -497,7 +497,7 @@ public final class StringUtil {
     }
 
     /**
-     * 将字符串首字母转大写
+     * 	将字符串首字母转大写
      * @param str 需要处理的字符串
      */
     public  static String upperFirstChar(String str){
@@ -512,7 +512,7 @@ public final class StringUtil {
     }
 
     /**
-     * 将字符串首字母转小写
+     * 	将字符串首字母转小写
      * @param str
      * @return
      */
@@ -528,7 +528,7 @@ public final class StringUtil {
     }
 
     /**
-     * 判读俩个字符串右侧的length个字符串是否一样
+     * 	判读俩个字符串右侧的length个字符串是否一样
      * @param str1
      * @param str2
      * @param length
@@ -539,7 +539,7 @@ public final class StringUtil {
     }
 
     /**
-     * 判读俩个字符串左侧的length个字符串是否一样
+     * 	判读俩个字符串左侧的length个字符串是否一样
      * @param str1
      * @param str2
      * @param length

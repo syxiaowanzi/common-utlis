@@ -35,47 +35,47 @@ public class SysUtil {
     ;
     public static final String HTTP_PROXY_PASSWORD = "http.proxyPassword";
     /**
-     * 主机IP
+     * 	主机IP
      */
     public static String HOST_IP;
     /**
-     * 主机名
+     * 	主机名
      */
     public static String HOST_NAME;
 
     /**
-     * 主机架构
+     * 	主机架构
      */
     public static String OS_ARCH           = PropertiesUtil.key("os.arch");
     /**
-     * 主机类型
+     * 	主机类型
      */
     public static String OS_NAME           = PropertiesUtil.key("os.name");
     /**
-     * 主机类型版本
+     * 	主机类型版本
      */
     public static String OS_VERSION        = PropertiesUtil.key("os.version");
     /**
-     * 操作系统类型
+     * 	操作系统类型
      */
     public static String SUN_DESKTOP       = PropertiesUtil.key("sun.desktop");
     /**
-     * 当前用户
+     * 	当前用户
      */
     public static String CURRENT_USER      = PropertiesUtil.key("user.name");
     /**
-     * 当前用户的家目录
+     * 	当前用户的家目录
      */
     public static String CURRENT_USER_HOME = PropertiesUtil.key("user.home");
     /**
-     * 当用用户的工作目录
+     * 	当用用户的工作目录
      */
     public static String CURRENT_USER_DIR  = PropertiesUtil.key("user.dir");
     public static String FILE_SEPARATOR    = PropertiesUtil.key("file.separator");
     public static String PATH_SEPARATOR    = PropertiesUtil.key("path.separator");
     public static String LINE_SEPARATOR    = PropertiesUtil.key("line.separator");
     /**
-     * 总的物理内存
+     * 	总的物理内存
      */
     public static  long                  TotalMemorySize;
     private static OperatingSystemMXBean osmxb;
@@ -119,7 +119,7 @@ public class SysUtil {
 
 
     /**
-     * 已使用的物理内存
+     * 	已使用的物理内存
      */
     public final static long usedMemory() {
         if (CheckUtil.valid(osmxb)) {
@@ -129,7 +129,7 @@ public class SysUtil {
     }
 
     /**
-     * 获取JVM内存总量
+     *	 获取JVM内存总量
      *
      */
     public final static long JVMtotalMem() {
@@ -137,7 +137,7 @@ public class SysUtil {
     }
 
     /**
-     * 虚拟机空闲内存量
+     * 	虚拟机空闲内存量
      *
      */
     public final static long JVMfreeMem() {
@@ -145,7 +145,7 @@ public class SysUtil {
     }
 
     /**
-     * 虚拟机使用最大内存量
+     * 	虚拟机使用最大内存量
      *
      */
     public final static long JVMmaxMem() {

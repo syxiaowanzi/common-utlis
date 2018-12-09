@@ -15,7 +15,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * 图片相关的操作
+ * 	图片相关的操作
  * @author adam.胡升阳
  */
 public final class OperateImage {
@@ -32,7 +32,7 @@ public final class OperateImage {
     // Photoshop的专用格式Photoshop
     public static String IMAGE_TYPE_PSD = "psd";
     /**
-     * 对图片裁剪，并把裁剪新图片保存
+     * 	对图片裁剪，并把裁剪新图片保存
      *
      * @param srcPath          读取源图片路径
      * @param toPath           写入图片路径
@@ -70,7 +70,7 @@ public final class OperateImage {
     }
 
     /**
-     * 按倍率缩小图片
+     * 	按倍率缩小图片
      *
      * @param srcImagePath 读取图片路径
      * @param toImagePath  写入图片路径
@@ -95,7 +95,7 @@ public final class OperateImage {
     }
 
     /**
-     * 长高等比例缩小图片
+     * 	长高等比例缩小图片
      *
      * @param srcImagePath 读取图片路径
      * @param toImagePath  写入图片路径
@@ -118,7 +118,7 @@ public final class OperateImage {
     }
 
     /**
-     * 按倍率放大图片
+     * 	按倍率放大图片
      *
      * @param srcImagePath 读取图形路径
      * @param toImagePath  写入入行路径
@@ -143,7 +143,7 @@ public final class OperateImage {
 
 
     /**
-     * 长高等比例放大图片
+     * 	长高等比例放大图片
      *
      * @param srcImagePath 读取图形路径
      * @param toImagePath  写入入行路径
@@ -166,7 +166,7 @@ public final class OperateImage {
     }
 
     /**
-     * 重置图形的边长大小
+     * 	重置图形的边长大小
      *
      * @param srcImagePath 原图像
      * @param toImagePath 新生产的图像
@@ -190,7 +190,7 @@ public final class OperateImage {
     }
 
     /**
-     * 横向拼接图片（两张）
+     * 	横向拼接图片（两张）
      *
      * @param firstSrcImagePath  第一张图片的路径
      * @param secondSrcImagePath 第二张图片的路径
@@ -234,7 +234,7 @@ public final class OperateImage {
     }
 
     /**
-     * 横向拼接一组（多张）图像
+     * 	横向拼接一组（多张）图像
      *
      * @param pics    将要拼接的图像
      * @param type    图像写入格式
@@ -273,7 +273,7 @@ public final class OperateImage {
                 return false;
             }
             /*
-             * 生成新图片
+             *	 生成新图片
              */
             BufferedImage ImageNew = new BufferedImage(dst_width, dst_height, BufferedImage.TYPE_INT_RGB);
             int width_i = 0;
@@ -291,7 +291,7 @@ public final class OperateImage {
     }
 
     /**
-     * 纵向拼接图片（两张）
+     * 	纵向拼接图片（两张）
      *
      * @param firstSrcImagePath  读取的第一张图片
      * @param secondSrcImagePath 读取的第二张图片
@@ -334,7 +334,7 @@ public final class OperateImage {
     }
 
     /**
-     * 纵向拼接一组（多张）图像
+     *	 纵向拼接一组（多张）图像
      *
      * @param pics    将要拼接的图像数组
      * @param type    写入图像类型
@@ -374,7 +374,7 @@ public final class OperateImage {
                 return false;
             }
             /*
-             * 生成新图片
+             * 	生成新图片
              */
             BufferedImage ImageNew = new BufferedImage(dst_width, dst_height, BufferedImage.TYPE_INT_RGB);
             int height_i = 0;
@@ -392,7 +392,7 @@ public final class OperateImage {
     }
 
     /**
-     * 合并图片(按指定初始x、y坐标将附加图片贴到底图之上)
+     * 	合并图片(按指定初始x、y坐标将附加图片贴到底图之上)
      *
      * @param negativeImagePath 背景图片路径
      * @param additionImagePath 附加图片路径
@@ -430,7 +430,7 @@ public final class OperateImage {
     }
 
     /**
-     * 将一组图片一次性附加合并到底图上
+     * 	将一组图片一次性附加合并到底图上
      *
      * @param negativeImagePath 源图像（底图）路径
      * @param additionImageList 附加图像信息列表
@@ -482,19 +482,8 @@ public final class OperateImage {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /**
-     * 图片灰化操作
+     * 	图片灰化操作
      *
      * @param srcImage    读取图片路径
      * @param toPath      写入灰化后的图片路径
@@ -513,7 +502,7 @@ public final class OperateImage {
     }
 
     /**
-     * 在源图片上设置水印文字
+     * 	在源图片上设置水印文字
      *
      * @param srcImagePath 源图片路径
      * @param alpha        透明度（0<alpha<1）
@@ -558,7 +547,7 @@ public final class OperateImage {
     }
 
     /**
-     * 在源图像上设置图片水印
+     * 	在源图像上设置图片水印
      * ---- 当alpha==1时文字不透明（和在图片上直接输入文字效果一样）
      *
      * @param srcImagePath    源图片路径
@@ -601,7 +590,7 @@ public final class OperateImage {
     }
 
     /**
-     * 画单点 ---- 实际上是画一个填充颜色的圆
+     *	 画单点 ---- 实际上是画一个填充颜色的圆
      * ---- 以指定点坐标为中心画一个小半径的圆形，并填充其颜色来充当点
      *
      * @param srcImagePath 源图片颜色
@@ -636,7 +625,7 @@ public final class OperateImage {
     }
 
     /**
-     * 画一组（多个）点---- 实际上是画一组（多个）填充颜色的圆
+     * 	画一组（多个）点---- 实际上是画一组（多个）填充颜色的圆
      * ---- 以指定点坐标为中心画一个小半径的圆形，并填充其颜色来充当点
      *
      * @param srcImagePath 原图片路径
@@ -677,7 +666,7 @@ public final class OperateImage {
     }
 
     /**
-     * 画线段
+     * 	画线段
      *
      * @param srcImagePath 源图片路径
      * @param x1           第一个点x坐标
@@ -710,7 +699,7 @@ public final class OperateImage {
     }
 
     /**
-     * 画折线 / 线段
+     *	 画折线 / 线段
      * ---- 2个点即画线段，多个点画折线
      *
      * @param srcImagePath 源图片路径
@@ -745,7 +734,7 @@ public final class OperateImage {
     }
 
     /**
-     * 绘制折线，并突出显示转折点
+     * 	绘制折线，并突出显示转折点
      *
      * @param srcImagePath 源图片路径
      * @param xPoints      x坐标数组
@@ -794,7 +783,7 @@ public final class OperateImage {
 
 
     /**
-     * 绘制一个由 x 和 y 坐标数组定义的闭合多边形
+     * 	绘制一个由 x 和 y 坐标数组定义的闭合多边形
      *
      * @param srcImagePath 源图片路径
      * @param xPoints      x坐标数组
@@ -827,7 +816,7 @@ public final class OperateImage {
     }
 
     /**
-     * 绘制并填充多边形
+     * 	绘制并填充多边形
      *
      * @param srcImagePath 源图像路径
      * @param xPoints      x坐标数组

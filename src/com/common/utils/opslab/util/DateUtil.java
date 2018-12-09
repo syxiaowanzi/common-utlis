@@ -9,7 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author:Neptune
  * @Description:DateUtil 提供一些常用的时间想法的方法
  */
 public final class DateUtil {
@@ -57,7 +56,7 @@ public final class DateUtil {
 
 
     /**
-     * 获取当前日期时间
+     * 	获取当前日期时间
      *
      * @return 返回当前时间的字符串值
      */
@@ -66,7 +65,7 @@ public final class DateUtil {
     }
 
     /**
-     * 将指定的时间格式化成出返回
+     * 	将指定的时间格式化成出返回
      *
      * @param date
      * @return
@@ -76,7 +75,7 @@ public final class DateUtil {
     }
 
     /**
-     * 将指定的字符串解析为时间类型
+     * 	将指定的字符串解析为时间类型
      *
      * @param datestr
      * @return
@@ -87,7 +86,7 @@ public final class DateUtil {
     }
 
     /**
-     * 获取当前的日期
+     * 	获取当前的日期
      *
      * @return
      */
@@ -96,7 +95,7 @@ public final class DateUtil {
     }
 
     /**
-     * 将指定的时间格式化成出返回
+     * 	将指定的时间格式化成出返回
      *
      * @param date
      * @return
@@ -106,7 +105,7 @@ public final class DateUtil {
     }
 
     /**
-     * 将指定的字符串解析为时间类型
+     * 	将指定的字符串解析为时间类型
      *
      * @param dateStr
      * @return
@@ -117,7 +116,7 @@ public final class DateUtil {
     }
 
     /**
-     * 获取当前的时间
+     * 	获取当前的时间
      *
      * @return
      */
@@ -126,7 +125,7 @@ public final class DateUtil {
     }
 
     /**
-     * 讲指定的时间格式化成出返回
+     *	 讲指定的时间格式化成出返回
      *
      * @param date
      * @return
@@ -136,7 +135,7 @@ public final class DateUtil {
     }
 
     /**
-     * 将指定的字符串解析为时间类型
+     * 	将指定的字符串解析为时间类型
      *
      * @param dateStr
      * @return
@@ -148,7 +147,7 @@ public final class DateUtil {
 
 
     /**
-     * 在当前时间的基础上加或减去year年
+     *	 在当前时间的基础上加或减去year年
      *
      * @param year
      * @return
@@ -161,7 +160,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在指定的时间上加或减去几年
+     * 	在指定的时间上加或减去几年
      *
      * @param date
      * @param year
@@ -175,7 +174,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在当前时间的基础上加或减去几月
+     * 	在当前时间的基础上加或减去几月
      *
      * @param month
      * @return
@@ -188,7 +187,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在指定的时间上加或减去几月
+     * 	在指定的时间上加或减去几月
      *
      * @param date
      * @param month
@@ -202,7 +201,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在当前时间的基础上加或减去几天
+     * 	在当前时间的基础上加或减去几天
      *
      * @param day
      * @return
@@ -215,7 +214,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在指定的时间上加或减去几天
+     *	 在指定的时间上加或减去几天
      *
      * @param date
      * @param day
@@ -229,7 +228,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在当前时间的基础上加或减去几小时-支持浮点数
+     * 	在当前时间的基础上加或减去几小时-支持浮点数
      *
      * @param hour
      * @return
@@ -242,7 +241,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在制定的时间上加或减去几小时-支持浮点数
+     * 	在制定的时间上加或减去几小时-支持浮点数
      *
      * @param date
      * @param hour
@@ -256,7 +255,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在当前时间的基础上加或减去几分钟
+     * 	在当前时间的基础上加或减去几分钟
      *
      * @param minute
      * @return
@@ -269,7 +268,7 @@ public final class DateUtil {
     }
 
     /**
-     * 在制定的时间上加或减去几分钟
+     * 	在制定的时间上加或减去几分钟
      *
      * @param date
      * @param minute
@@ -284,7 +283,7 @@ public final class DateUtil {
 
 
     /**
-     * 判断字符串是否为日期字符串
+     * 	判断字符串是否为日期字符串
      *
      * @param date 日期字符串
      * @return true or false
@@ -301,7 +300,7 @@ public final class DateUtil {
 
 
     /**
-     * 时间date1和date2的时间差-单位秒
+     * 	时间date1和date2的时间差-单位秒
      *
      * @param date1
      * @param date2
@@ -313,7 +312,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位秒
+     * 	时间date1和date2的时间差-单位秒
      *
      * @param date1
      * @param date2
@@ -334,7 +333,7 @@ public final class DateUtil {
 
 
     /**
-     * 时间date1和date2的时间差 -单位分钟
+     * 	时间date1和date2的时间差 -单位分钟
      *
      * @param date1
      * @param date2
@@ -354,7 +353,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位分钟
+     * 	时间date1和date2的时间差-单位分钟
      *
      * @param date1
      * @param date2
@@ -366,7 +365,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位小时
+     * 	时间date1和date2的时间差-单位小时
      *
      * @param date1
      * @param date2
@@ -378,7 +377,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位小时
+     * 	时间date1和date2的时间差-单位小时
      *
      * @param date1
      * @param date2
@@ -399,7 +398,7 @@ public final class DateUtil {
 
 
     /**
-     * 时间date1和date2的时间差-单位天
+     * 	时间date1和date2的时间差-单位天
      *
      * @param date1
      * @param date2
@@ -419,7 +418,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位天
+     * 	时间date1和date2的时间差-单位天
      *
      * @param date1
      * @param date2
@@ -431,7 +430,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位月
+     * 	时间date1和date2的时间差-单位月
      *
      * @param date1
      * @param date2
@@ -461,7 +460,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位月
+     * 	时间date1和date2的时间差-单位月
      *
      * @param date1
      * @param date2
@@ -486,7 +485,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位年
+     * 	时间date1和date2的时间差-单位年
      *
      * @param date1
      * @param date2
@@ -510,7 +509,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间date1和date2的时间差-单位年
+     * 	时间date1和date2的时间差-单位年
      *
      * @param date1
      * @param date2
@@ -529,7 +528,7 @@ public final class DateUtil {
     }
 
     /**
-     * 获取俩个时间的查结果用时秒表示
+     * 	获取俩个时间的查结果用时秒表示
      *
      * @param date1
      * @param date2
@@ -553,7 +552,7 @@ public final class DateUtil {
     }
 
     /**
-     * 获取俩个时间的查结果用时秒表示
+     * 	获取俩个时间的查结果用时秒表示
      *
      * @param date1
      * @param date2
@@ -578,7 +577,7 @@ public final class DateUtil {
     }
 
     /**
-     * 获取俩个时间之前的相隔的天数
+     *	 获取俩个时间之前的相隔的天数
      *
      * @param startTime
      * @param endTime
@@ -613,7 +612,7 @@ public final class DateUtil {
     }
 
     /**
-     * 获取俩个时间之前的相隔的天数
+     * 	获取俩个时间之前的相隔的天数
      *
      * @param startTime
      * @param endTime
@@ -654,7 +653,7 @@ public final class DateUtil {
     }
 
     /**
-     * 返回俩个时间在时间段(例如每天的08:00-18:00)的时长-单位秒
+     * 	返回俩个时间在时间段(例如每天的08:00-18:00)的时长-单位秒
      *
      * @param startDate
      * @param endDate
@@ -671,7 +670,7 @@ public final class DateUtil {
     }
 
     /**
-     * 返回俩个时间在时间段(例如每天的08:00-18:00)的时长-单位秒
+     *	 返回俩个时间在时间段(例如每天的08:00-18:00)的时长-单位秒
      *
      * @param startDate
      * @param endDate
@@ -759,7 +758,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间Date在时间段(例如每天的08:00-18:00)上增加或减去second秒
+     * 	时间Date在时间段(例如每天的08:00-18:00)上增加或减去second秒
      *
      * @param date
      * @param second
@@ -779,7 +778,7 @@ public final class DateUtil {
     }
 
     /**
-     * 时间Date在时间段(例如每天的08:00-18:00)上增加或减去second秒
+ 	 * 	时间Date在时间段(例如每天的08:00-18:00)上增加或减去second秒
      *
      * @param date
      * @param second
@@ -857,7 +856,7 @@ public final class DateUtil {
     }
 
     /**
-     * 判断是否在某个时间段内
+     * 	判断是否在某个时间段内
      * @param startTime
      * @param endTime
      * @param date
@@ -870,7 +869,7 @@ public final class DateUtil {
     }
 
     /**
-     * 判断在某个时间内
+     * 	判断在某个时间内
      * @param startTime
      * @param endTime
      * @param date

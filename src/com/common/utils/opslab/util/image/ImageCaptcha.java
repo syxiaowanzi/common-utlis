@@ -3,7 +3,7 @@ package com.common.utils.opslab.util.image;
 import java.util.Random;
 
 /**
- * 生成图片验证码
+ * 	生成图片验证码
  */
 public final class ImageCaptcha {
     //指定图片的宽度
@@ -38,7 +38,7 @@ public final class ImageCaptcha {
     }
 
     /**
-     * 随机指定长度的字符串
+     * 	随机指定长度的字符串
      * @param len
      * @return
      */
@@ -53,7 +53,7 @@ public final class ImageCaptcha {
     }
 
     /**
-     * 生产一张png格式的验证图片在指定的位置
+     * 	生产一张png格式的验证图片在指定的位置
      * @param strlen 验证码长度
      * @param file 文件位置
      * @return 是否成功

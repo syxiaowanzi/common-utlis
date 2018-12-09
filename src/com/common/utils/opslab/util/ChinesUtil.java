@@ -12,15 +12,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 一些中文相关的操作方法
+ * 	一些中文相关的操作方法
  */
 public final class ChinesUtil {
-    private ChinesUtil(){
-
-    }
     /**
-     * 将字符串中的中文转化为拼音,其他字符不变
-     *
+     * 	将字符串中的中文转化为拼音,其他字符不变
      * @param inputString
      * @return
      */
@@ -46,10 +42,9 @@ public final class ChinesUtil {
         }
         return output;
     }
-
+    
     /**
-     * 获取汉字串拼音首字母，英文字符不变
-     *
+     * 	获取汉字串拼音首字母，英文字符不变
      * @param chinese 汉字串
      * @return 汉语拼音首字母
      */
@@ -75,10 +70,13 @@ public final class ChinesUtil {
         }
         return pybf.toString().replaceAll("\\W", "").trim();
     }
-
+    public static void main(String[] args) {
+    	//System.out.println(getPingYin("是不是啊，你说呢？"));
+    	System.out.println(getFirstSpell("是不是啊，你说呢？ HelloWorld"));
+    	
+	}
     /**
-     * 获取汉字串拼音，英文字符不变
-     *
+     * 	获取汉字串拼音，英文字符不变
      * @param chinese 汉字串
      * @return 汉语拼音
      */
@@ -138,8 +136,7 @@ public final class ChinesUtil {
     }
 
     /**
-     * 判断是否是中文
-     *
+     * 	判断是否是中文
      * @param c
      * @return
      */
@@ -152,7 +149,7 @@ public final class ChinesUtil {
     }
 
     /**
-     * 获取一个字符串中中文字符的个数
+     * 	获取一个字符串中中文字符的个数
      */
     public final static int ChineseLength(String str) {
         Pattern p = Pattern.compile("[\u4E00-\u9FA5]+");
@@ -166,8 +163,7 @@ public final class ChinesUtil {
     }
 
     /**
-     * 判断是否是乱码
-     *
+     * 	判断是否是乱码
      * @param strName
      * @return
      */

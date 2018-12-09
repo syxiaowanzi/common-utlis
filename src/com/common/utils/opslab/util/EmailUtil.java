@@ -5,16 +5,18 @@ import javax.activation.DataSource;
 import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
+
+import org.apache.log4j.Logger;
+
 import java.io.File;
 import java.util.Properties;
 
 /**
- * Description
- * 封装Email相关的操作
+ * 	封装Email相关的操作
  */
 public final class EmailUtil {
 
-
+	private static Logger logger = Logger.getLogger(EmailUtil.class);
     private Properties properties = new Properties();
     /**
      * Message对象将存储我们实际发送的电子邮件信息，
@@ -29,27 +31,26 @@ public final class EmailUtil {
 
     private Transport transport;
     private String mailHost = "";
-    private int port = 25;
+    private int port = 465;
     private boolean auth = false;
     private String sender_username = "";
     private String sender_password = "";
 
-    /*
-     * 初始化方法
+    /**
+     *	 初始化方法
      */
     public EmailUtil(boolean debug) {
-
         this.mailHost = OpslabConfig.get("mail.smtp.host");
         this.port = Integer.valueOf(OpslabConfig.get("mail.smtp.port"));
         this.auth = Boolean.parseBoolean(OpslabConfig.get("mail.smtp.auth"));
         this.sender_username = OpslabConfig.get("mail.sender.username");
         this.sender_password = OpslabConfig.get("mail.sender.password");
-
         properties.put("mail.smtp.host", mailHost);
         properties.put("mail.smtp.auth", auth);
-        properties.put("mail.smtp.port", String.valueOf(25));
+        properties.put("mail.smtp.port", String.valueOf(port));
         properties.put("mail.sender.username", sender_username);
         properties.put("mail.sender.password", sender_password);
+        properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 
         session = Session.getInstance(properties);
         session.setDebug(debug);//开启后有调试信息
@@ -57,7 +58,7 @@ public final class EmailUtil {
     }
 
     /**
-     * 发送邮件
+     *	 发送邮件
      *
      * @param subject     邮件主题
      * @param sendHtml    邮件内容
@@ -87,6 +88,7 @@ public final class EmailUtil {
 
             transport = session.getTransport("smtp");
             // smtp验证，就是你用来发邮件的邮箱用户名密码
+            System.out.println("fasongzhiqia:"+sender_password);
             transport.connect(mailHost, port, sender_username, sender_password);
             // 发送
             transport.sendMessage(message, message.getAllRecipients());
@@ -104,9 +106,14 @@ public final class EmailUtil {
         }
     }
 
-
+    public static void main(String[] args) {
+    	//EmailUtil eu = new EmailUtil(true);
+    	//eu.doSendHtmlEmail("ceshi", "这是一个测试邮件", "himingwang@126.com");
+    	logger.info("11111");
+	}
+    
     /**
-     * 发送邮件
+     * 	发送邮件
      *
      * @param subject     邮件主题
      * @param sendHtml    邮件内容

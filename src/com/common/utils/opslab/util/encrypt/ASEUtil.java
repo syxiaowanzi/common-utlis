@@ -19,11 +19,11 @@ import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
 /**
- * ASE加密
+ * 	ASE加密
  */
 public final class ASEUtil {
-    /*
-     * 加密
+    /**
+     *	 加密
      * 	1.构造密钥生成器
      *	2.根据ecnodeRules规则初始化密钥生成器
      * 	3.产生密钥
@@ -81,7 +81,7 @@ public final class ASEUtil {
     }
 
     /*
-     * 解密 解密过程：
+     * 	解密 解密过程：
      *	1.同加密1-4步
      * 	2.将加密后的字符串反纺成byte[]数组
      * 	3.将加密内容解密
@@ -108,7 +108,7 @@ public final class ASEUtil {
             // 8.将加密并编码后的内容解码成字节数组
             byte[] byte_content = new BASE64Decoder().decodeBuffer(content);
             /*
-             * 解密
+             * 	解密
 			 */
             byte[] byte_decode = cipher.doFinal(byte_content);
             String AES_decode = new String(byte_decode, "utf-8");
@@ -131,7 +131,7 @@ public final class ASEUtil {
     }
 
     /**
-     * 加密字符串
+     * 	加密字符串
      *
      * @param secretKey
      * @param Str
@@ -142,7 +142,7 @@ public final class ASEUtil {
     }
 
     /**
-     * 解密字符串
+     * 	解密字符串
      *
      * @param secretKey
      * @param str

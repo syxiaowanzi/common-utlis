@@ -3,7 +3,7 @@ package com.common.utils.opslab.util;
 import java.io.*;
 
 /**
- * 流相关的操作方法封装
+ * 	流相关的操作方法封装
  */
 public final class StreamUtil {
     /**
@@ -56,7 +56,7 @@ public final class StreamUtil {
     }
 
     /**
-     * 将流另存为文件
+     * 	将流另存为文件
      */
     public final static void streamSaveAsFile(InputStream is, File outfile) {
         try (FileOutputStream fos = new FileOutputStream(outfile)) {

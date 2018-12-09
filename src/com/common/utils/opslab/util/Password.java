@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 /**
- * 提供密码相关的工具类
+ * 	提供密码相关的工具类
  */
 public final class Password {
 
@@ -12,7 +12,7 @@ public final class Password {
     private static final String SEC_PASSWORD =
             "^(?=.*?[0-9])(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[@!#$%^&*()_+\\.\\-\\?<>'\"|=]+).{8,15}$";
     /**
-     * 字符串加密函数MD5实现
+     * 	字符串加密函数MD5实现
      */
     public final static String md5(String password){
         MessageDigest md;
@@ -32,8 +32,8 @@ public final class Password {
     }
 
     /**
-     * 判断一个密码是否健壮
-     * 必选包含数字、大写字母、小写字母、特殊字符，长度在8到15位
+     * 	判断一个密码是否健壮
+     * 	必选包含数字、大写字母、小写字母、特殊字符，长度在8到15位
      * @param password
      * @return
      */

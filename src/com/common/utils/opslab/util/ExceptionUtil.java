@@ -4,11 +4,11 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * 异常处理的工具类
+ *	 异常处理的工具类
  */
 public final class ExceptionUtil {
     /**
-     * 只返回指定包中的异常堆栈信息
+     * 	只返回指定包中的异常堆栈信息
      *
      * @param e 异常信息
      * @param packageName 只转换某个包下的信息
@@ -34,7 +34,7 @@ public final class ExceptionUtil {
     }
 
     /**
-     * 获取异常信息
+     * 	获取异常信息
      *
      * @param e 异常信息
      * @return string
@@ -44,4 +44,13 @@ public final class ExceptionUtil {
         e.printStackTrace(new PrintWriter(sw, true));
         return sw.toString();
     }
+    
+    public static void main(String[] args) {
+		try {
+			int a = 5/0;
+		}catch(Exception e) {
+			//System.out.println(stackTraceToString(e));
+			System.out.println(stackTraceToString(e,"java.lang.ArithmeticException"));
+		}
+	}
 }

@@ -24,7 +24,6 @@ public class OpslabConfig {
         try (InputStream inputStream = contextClassLoader.getResource("0opslab-default.properties").openStream()) {
             CLASS_PATH = new File(contextClassLoader.getResource("").toURI()).getPath();
 
-
             INIT_MAP = PropertiesUtil.properties(inputStream);
 
             //获取非jar包内的配置信息
@@ -56,7 +55,7 @@ public class OpslabConfig {
     public static final String TIME_FORMAT = INIT_MAP.get("TIME_FORMAT");
 
     /**
-     * 获取配置信息
+     * 	获取配置信息
      * @param key
      * @return
      */

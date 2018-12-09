@@ -13,7 +13,7 @@ public final class RandomUtil {
 
 
     /**
-     * 生成制定范围内的随机数
+     * 	生成制定范围内的随机数
      *
      * @param scopeMin
      * @param scoeMax
@@ -25,7 +25,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回固定长度的数字
+     * 	返回固定长度的数字
      *
      * @param length
      * @return
@@ -40,7 +40,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回一个定长的随机字符串(只包含大小写字母、数字)
+     * 	返回一个定长的随机字符串(只包含大小写字母、数字)
      *
      * @param length 随机字符串长度
      * @return 随机字符串
@@ -55,7 +55,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回一个定长的随机纯字母字符串(只包含大小写字母)
+     * 	返回一个定长的随机纯字母字符串(只包含大小写字母)
      *
      * @param length 随机字符串长度
      * @return 随机字符串
@@ -70,7 +70,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回一个定长的随机纯大写字母字符串(只包含大小写字母)
+     * 	返回一个定长的随机纯大写字母字符串(只包含大小写字母)
      *
      * @param length 随机字符串长度
      * @return 随机字符串
@@ -80,7 +80,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回一个定长的随机纯小写字母字符串(只包含大小写字母)
+     * 	返回一个定长的随机纯小写字母字符串(只包含大小写字母)
      *
      * @param length 随机字符串长度
      * @return 随机字符串
@@ -90,7 +90,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 生成一个定长的纯0字符串
+     * 	生成一个定长的纯0字符串
      *
      * @param length 字符串长度
      * @return 纯0字符串
@@ -104,7 +104,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 根据数字生成一个定长的字符串，长度不够前面补0
+     * 	根据数字生成一个定长的字符串，长度不够前面补0
      *
      * @param num       数字
      * @param fixdlenth 字符串长度
@@ -124,7 +124,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 根据数字生成一个定长的字符串，长度不够前面补0
+     * 	根据数字生成一个定长的字符串，长度不够前面补0
      *
      * @param num       数字
      * @param fixdlenth 字符串长度
@@ -144,7 +144,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 每次生成的len位数都不相同
+     * 	每次生成的len位数都不相同
      *
      * @param param
      * @return 定长的数字
@@ -165,7 +165,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 从指定的数组中随机数组中的某个元素
+     * 	从指定的数组中随机数组中的某个元素
      */
     public static <T> T randomItem(T[] param) {
         int index = integer(0, param.length);
@@ -173,7 +173,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 实现一个简单的字符串乘法
+     * 	实现一个简单的字符串乘法
      * @param str
      * @param multiplication
      * @return
@@ -186,7 +186,7 @@ public final class RandomUtil {
         return buffer.toString();
     }
     /**
-     * 从指定的数组中按照指定比例返回指定的随机元素
+     * 	从指定的数组中按照指定比例返回指定的随机元素
      * @param param
      * @param percentum
      * @param <T>
@@ -230,7 +230,7 @@ public final class RandomUtil {
         }
     }
     /**
-     * 返回一个UUID
+     * 	返回一个UUID
      *
      * @return 小写的UUID
      */
@@ -242,7 +242,7 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回一个UUID
+     * 	返回一个UUID
      *
      * @return 大写的UUID
      */
@@ -255,10 +255,10 @@ public final class RandomUtil {
     }
 
     /**
-     * 返回一个有序列的uuid编码
-     * 前11位为时间(毫秒)
-     * 中间4位为主机特征码
-     * 剩下的保证其唯一性
+     * 	返回一个有序列的uuid编码
+     * 	前11位为时间(毫秒)
+     * 	中间4位为主机特征码
+     * 	剩下的保证其唯一性
      *
      * @return
      */

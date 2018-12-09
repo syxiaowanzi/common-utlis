@@ -15,22 +15,22 @@ import java.util.List;
 import java.util.Map;
 import javax.imageio.ImageIO;
 /**
- * 添加水印工具类
+ * 	添加水印工具类
  * @author wangming
  */
 public class PapeMarkUtil {
 	
 	/**
-	 * 图片添加文字
+	 * 	图片添加文字
 	 * 
 	 * @param srcImgPath
-	 *            需要添加水印的图片的路径
+	 *	需要添加水印的图片的路径
 	 * @param outImgPath
-	 *            添加水印后图片输出路径
+	 *	添加水印后图片输出路径
 	 * @param markContentColor
-	 *            水印文字的颜色
+	 *	水印文字的颜色
 	 * @param ContentAndPosition
-	 *            内容和位置
+	 *	内容和位置
 	 */
 	public static void markPaper(String srcImgPath, String outImgPath, Color markContentColor, ContentAndPosition cp ) {
 		FileOutputStream outImgStream = null;
@@ -84,16 +84,16 @@ public class PapeMarkUtil {
 	}
 	
 	/**
-	 * 图片添加水印
+	 * 	图片添加水印
 	 * 
 	 * @param srcImgPath
-	 *            需要添加水印的图片的路径
+	 *	需要添加水印的图片的路径
 	 * @param outImgPath
-	 *            添加水印后图片输出路径
+	 *	添加水印后图片输出路径
 	 * @param markContentColor
-	 *            水印文字的颜色
+	 *	水印文字的颜色
 	 * @param waterMarkContent
-	 *            水印的文字
+	 *	水印的文字
 	 */
 	public static void mark(String srcImgPath, String outImgPath, Color markContentColor, String waterMarkContent) {
 		FileOutputStream outImgStream = null;
@@ -137,10 +137,10 @@ public class PapeMarkUtil {
 	
 
 	/**
-	 * 获取水印文字总长度
+	 *	 获取水印文字总长度
 	 * 
 	 * @param waterMarkContent
-	 *            水印的文字
+	 * 	 水印的文字
 	 * @param g
 	 * @return 水印文字总长度
 	 */
@@ -150,7 +150,7 @@ public class PapeMarkUtil {
 	}
 	
 	/**
-	 * 内容与坐标
+	 * 	内容与坐标
 	 */
 	 public class ContentAndPosition{
 		private String content; // 内容

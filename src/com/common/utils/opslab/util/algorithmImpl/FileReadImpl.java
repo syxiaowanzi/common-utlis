@@ -5,12 +5,12 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * 封装了集中常用的文件读的方法
+ *	 封装了集中常用的文件读的方法
  */
 public class FileReadImpl {
 
     /**
-     * 利用FileChannel直接实现文件的对拷,对于大文件速度特别明显
+     * 	利用FileChannel直接实现文件的对拷,对于大文件速度特别明显
      *
      * @param source
      * @param target
@@ -29,7 +29,7 @@ public class FileReadImpl {
     }
 
     /**
-     * 使用FileChannel+Buffer实现文件的读取拷贝是一种极佳的方案
+     *	 使用FileChannel+Buffer实现文件的读取拷贝是一种极佳的方案
      *
      * @param source
      * @param target
@@ -53,7 +53,7 @@ public class FileReadImpl {
     }
 
     /**
-     * 利用Buffer实现文件的读取拷贝
+     * 	利用Buffer实现文件的读取拷贝
      *
      * @param source
      * @param target
@@ -74,7 +74,7 @@ public class FileReadImpl {
     }
 
     /**
-     * 利用Buffer实现文件的读取拷贝
+     * 	利用Buffer实现文件的读取拷贝
      *
      * @param source
      * @param target

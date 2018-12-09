@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 判断 传入的字符串 是否符合特定的格式
+ * 	判断 传入的字符串 是否符合特定的格式
  * 
  * @author 王明 
  * @date 2018-11-18
@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class FieldValidationUtil {  
 	
     /**
-     * 根据验证类型 判断传入的字符串是否符合规则
+     *	 根据验证类型 判断传入的字符串是否符合规则
      * @author wangming
      * 
      * 0	非空 
@@ -333,7 +333,7 @@ public class FieldValidationUtil {
     	
     }
     /**   
-     * 功能：设置地区编码   
+     * 	功能：设置地区编码   
      * @return Hashtable 对象   
      */    
     private static Hashtable<String, String> GetAreaCode() {     
@@ -429,9 +429,9 @@ public class FieldValidationUtil {
 	}
 	
 	/**
-     * 判断字符串中是否包含中文
+     * 	判断字符串中是否包含中文
      * @param str
-     * 待校验字符串
+     * 	待校验字符串
      * @return 是否为中文
      * @warn 不能校验是否为中文标点符号
      */
@@ -445,7 +445,7 @@ public class FieldValidationUtil {
     }
   
     /**
-     * 过滤后空格的字符串
+     * 	过滤后空格的字符串
      * @param str
      * @return
      */
@@ -462,7 +462,7 @@ public class FieldValidationUtil {
 	
     
     /**
-     * 身份证号的特殊字符转化
+     *	 身份证号的特殊字符转化
      * @param str
      * @return
      */
@@ -475,7 +475,7 @@ public class FieldValidationUtil {
     }
     
     /**
-     * 证件有效期判断转换
+     * 	证件有效期判断转换
      */
     public static String cardDate(String idStartDate , String idEndDate,String isLongterm){
     	String cardDateString="";

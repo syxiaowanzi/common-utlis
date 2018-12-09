@@ -2,18 +2,17 @@ package com.common.utils.opslab.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Collection;
 import java.util.Map;
 
 /**
- * 提供一些对象有效性校验的方法
+ *	 提供一些对象有效性校验的方法
  */
 @SuppressWarnings("rawtypes")
 public final class CheckUtil {
 
     /**
-     * 判断字符串是否是符合指定格式的时间
+     * 	判断字符串是否是符合指定格式的时间
      * @param date 时间字符串
      * @param format 时间格式
      * @return 是否符合
@@ -30,14 +29,14 @@ public final class CheckUtil {
     }
 
     /**
-     * 判断字符串有效性
+     * 	判断字符串有效性
      */
     public final static boolean valid(String src) {
         return !(src == null || "".equals(src.trim()));
     }
 
     /**
-     * 判断一组字符串是否有效
+     * 	判断一组字符串是否有效
      * @param src
      * @return
      */
@@ -52,14 +51,14 @@ public final class CheckUtil {
 
 
     /**
-     * 判断一个对象是否为空
+     *	 判断一个对象是否为空
      */
     public final static boolean valid(Object obj) {
         return !(null == obj);
     }
 
     /**
-     * 判断一组对象是否有效
+     * 	判断一组对象是否有效
      * @param objs
      * @return
      */
@@ -71,14 +70,14 @@ public final class CheckUtil {
     }
 
     /**
-     * 判断集合的有效性
+     *	 判断集合的有效性
      */
     public final static boolean valid(Collection col) {
         return !(col == null || col.isEmpty());
     }
 
     /**
-     * 判断一组集合是否有效
+     * 	判断一组集合是否有效
      * @param cols
      * @return
      */
@@ -92,7 +91,7 @@ public final class CheckUtil {
     }
 
     /**
-     * 判断map是否有效
+     * 	判断map是否有效
      * @param map
      * @return
      */
@@ -101,7 +100,7 @@ public final class CheckUtil {
     }
 
     /**
-     * 判断一组map是否有效
+     * 	判断一组map是否有效
      * @param maps 需要判断map
      * @return 是否全部有效
      */
@@ -115,17 +114,8 @@ public final class CheckUtil {
     }
     
     public static void main(String[] args) {
-    	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        try {
-			//sdf.parse("1234-2222-1221");
-        	Calendar ca = Calendar.getInstance();
-        	System.out.println(sdf.format(ca.getTimeInMillis()));
-			System.out.println(sdf.parse("123-232-111").getYear());
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	//System.out.println(isDate("1234-343-22 232:1123:111 232", "yyyy-MM-dd HH:ss:mm SSS"));
-    	
+		//isDate("123", "yyyy-MM-dd");
+    	//System.out.println(valid("123"));
+    	System.out.println(valid("123","444","233"));
 	}
 }

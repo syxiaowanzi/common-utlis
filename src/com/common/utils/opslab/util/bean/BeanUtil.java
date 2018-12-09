@@ -55,7 +55,7 @@ public  class BeanUtil {
 
 
     /**
-     * 添加Bean到BeanFactory的解析范围中
+     * 	添加Bean到BeanFactory的解析范围中
      *
      * @param obj 将目标obj加入到BeanFactory的解析范围中
      */
@@ -68,7 +68,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 添加Bean到BeanFactory的解析范围中
+     * 	添加Bean到BeanFactory的解析范围中
      *
      * @param clazz 将目标clazz加入到BeanFactory的解析范围中
      */
@@ -82,7 +82,7 @@ public  class BeanUtil {
 
 
     /**
-     * 判断属性是否存在
+     * 	判断属性是否存在
      *
      * @param bean 判断的目标bean
      * @param pro  判断的属性
@@ -96,7 +96,7 @@ public  class BeanUtil {
 
 
     /**
-     * 判断自己定义的而非继承的属性pro是否存在
+     *	 判断自己定义的而非继承的属性pro是否存在
      *
      * @param bean 判断的目标bean
      * @param pro  判断的属性
@@ -110,7 +110,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 判断属性是否存在忽略大小写
+     * 	判断属性是否存在忽略大小写
      *
      * @param bean 判断的目标bean
      * @param pro  判断的属性
@@ -124,7 +124,7 @@ public  class BeanUtil {
 
 
     /**
-     * 使用自定义的过滤器
+     * 	使用自定义的过滤器
      *
      * @param bean   判断的目标bean
      * @param pro    判断的属性
@@ -147,7 +147,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 获取对象的属性
+     * 	获取对象的属性
      *
      * @param bean 判断的目标bean
      * @param pro  判断的属性
@@ -182,7 +182,7 @@ public  class BeanUtil {
 
 
     /**
-     * 获取对象的属性(忽略属性名字大小写)
+     * 	获取对象的属性(忽略属性名字大小写)
      *
      * @param bean 操作的Bean
      * @param pro  类型属性
@@ -195,7 +195,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 获取对象的属性(忽略属性名字大小写)
+     * 	获取对象的属性(忽略属性名字大小写)
      *
      * @param bean 操作的Bean
      * @param pro  类型属性
@@ -213,7 +213,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 使用自定义的过滤器获取对象的属性获取对象的属性
+     * 	使用自定义的过滤器获取对象的属性获取对象的属性
      *
      * @param bean   操作的Bean
      * @param pro    类型属性
@@ -240,7 +240,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 使用自定义的过滤器获取对象的属性
+     *	 使用自定义的过滤器获取对象的属性
      *
      * @param bean   操作的Bean
      * @param pro    类型属性
@@ -269,7 +269,7 @@ public  class BeanUtil {
 
 
     /**
-     * 设置对象的属性
+     * 	设置对象的属性
      *
      * @param bean  操作的Bean
      * @param pro   类型属性
@@ -284,7 +284,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 设置对象的属性
+     * 	设置对象的属性
      *
      * @param bean  操作的Bean
      * @param pro   类型属性
@@ -304,7 +304,7 @@ public  class BeanUtil {
 
 
     /**
-     * 设置对象的属性忽略大小写
+     * 	设置对象的属性忽略大小写
      *
      * @param bean  操作的Bean
      * @param pro   类型属性
@@ -319,7 +319,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 设置对象的属性忽略大小写
+     *	 设置对象的属性忽略大小写
      *
      * @param bean  操作的Bean
      * @param pro   类型属性
@@ -336,7 +336,7 @@ public  class BeanUtil {
 
 
     /**
-     * 使用自定义的filter进行属性设值
+     * 	使用自定义的filter进行属性设值
      *
      * @param bean   操作的Bean
      * @param pro    类型属性
@@ -362,7 +362,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 使用自定义的filter进行属性设值
+     * 	使用自定义的filter进行属性设值
      *
      * @param bean   操作的Bean
      * @param pro    类型属性
@@ -390,7 +390,7 @@ public  class BeanUtil {
 
 
     /**
-     * 拷贝对象指定的属性
+     * 	拷贝对象指定的属性
      *
      * @param srcBean  源Bean
      * @param destBean 目标Bean
@@ -411,7 +411,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 拷贝对象指定的属性
+     * 	拷贝对象指定的属性
      *
      * @param srcBean  源Bean
      * @param destBean 目标Bean
@@ -433,7 +433,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 复制同名属性
+     * 	复制同名属性
      *
      * @param srcBean  源Bean
      * @param destBean 目标Bean
@@ -455,7 +455,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 复制同名属性
+     * 	复制同名属性
      *
      * @param srcBean  源Bean
      * @param destBean 目标Bean
@@ -482,7 +482,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 复制同名属性(忽略大小写)
+     * 	复制同名属性(忽略大小写)
      *
      * @param srcBean  原Bean
      * @param destBean 目标Bean
@@ -504,7 +504,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 复制同名属性(忽略大小写)
+     * 	复制同名属性(忽略大小写)
      *
      * @param srcBean  原Bean
      * @param destBean 目标Bean
@@ -532,7 +532,7 @@ public  class BeanUtil {
 
 
     /**
-     * 使用自定义的属性过滤函数
+     * 	使用自定义的属性过滤函数
      *
      * @param srcBean  原Bean
      * @param destBean 目标bean
@@ -569,7 +569,7 @@ public  class BeanUtil {
     }
 
     /**
-     * 使用自定义的属性过滤函数
+     * 	使用自定义的属性过滤函数
      *
      * @param srcBean  原Bean
      * @param destBean 目标bean

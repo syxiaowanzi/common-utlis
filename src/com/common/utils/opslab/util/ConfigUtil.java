@@ -10,14 +10,14 @@ import java.util.List;
 import java.util.Properties;
 
 /**
- * 配置相关的一些辅助类
+ * 	配置相关的一些辅助类
  */
 public class ConfigUtil {
 
     private static Logger logger = Logger.getLogger(ConfigUtil.class);
 
     /**
-     * 获取配置文件资源
+     * 	获取配置文件资源
      *
      * @return
      */
@@ -60,7 +60,7 @@ public class ConfigUtil {
     }
 
     /**
-     * 获取资源流
+     * 	获取资源流
      *
      * @param path
      * @return
@@ -72,7 +72,7 @@ public class ConfigUtil {
     }
 
     /**
-     * 获取资源属性
+     * 	获取资源属性
      *
      * @param path
      * @return

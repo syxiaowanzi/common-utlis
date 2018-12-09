@@ -21,7 +21,7 @@ public class FTPUtils {
 	 */
 	
 	/**
-	 * 获取ftp文件对象
+	 * 	获取ftp文件对象
 	 * @param ftpserver
 	 * @param ftpport
 	 * @param ftpuser
@@ -78,7 +78,7 @@ public class FTPUtils {
 		return paths;
 	}
 	/**
-	 * 创建文件夹
+	 *	 创建文件夹
 	 * @param localDir
 	 */
 	public static String makeDir(String localDir){

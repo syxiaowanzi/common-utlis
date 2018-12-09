@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 /**
  * Description:
- * 封装一些正则相关的操作
+ * 	封装一些正则相关的操作
  */
 public final class RegUtil {
 
@@ -78,15 +78,15 @@ public final class RegUtil {
      */
     public static final String  REG_EMAIL               = "^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$";
     /**
-     * 国内固定电话
+     * 	国内固定电话
      */
     public static final String  REG_FIXED_TELEPHONE     = "\\d{3}-\\d{8}|\\d{4}-\\d{7}";
     /**
-     * 邮政编码
+     * 	邮政编码
      */
     public static final String  REG_POSTALCODE          = "[1-9]\\d{5}(?!\\d)";
     /**
-     * 身份证编码
+     * 	身份证编码
      */
     public static final String  REG_IDENTIFICATION_CARD = "\\d{15}|\\d{18}";
     /**
@@ -94,11 +94,11 @@ public final class RegUtil {
      */
     public static final String  REG_URL                 = "^http://([w-]+.)+[w-]+(/[w-./?%&=]*)?$";
     /**
-     * 移动电话
+     * 	移动电话
      */
     public static final String  REG_MOBILE_TELEPHONE    = "^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$";
     /**
-     * 合法的名字（字母开头，允许5-16字节，允许字母数字下划线）
+     * 	合法的名字（字母开头，允许5-16字节，允许字母数字下划线）
      */
     public static final String  REG_LEGAL_ACCOUNT       = "^[a-zA-Z][a-zA-Z0-9_]{4,15}$";
     /**
@@ -111,7 +111,7 @@ public final class RegUtil {
     private static      Pattern abcPattern              = Pattern.compile("^[a-z|A-Z]+$");
 
     /**
-     * 判断是否数字表示
+     * 	判断是否数字表示
      *
      * @param src 源字符串
      * @return 是否数字的标志
@@ -128,7 +128,7 @@ public final class RegUtil {
     }
 
     /**
-     * 判断是否纯字母组合
+     * 	判断是否纯字母组合
      *
      * @param src 源字符串
      * @return 是否纯字母组合的标志
@@ -146,7 +146,7 @@ public final class RegUtil {
 
 
     /**
-     * 判断是否浮点数字表示
+     * 	判断是否浮点数字表示
      *
      * @param src 源字符串
      * @return 是否数字的标志
@@ -163,7 +163,7 @@ public final class RegUtil {
     }
 
     /**
-     * 判断字符串str是否符合正则表达式reg
+     * 	判断字符串str是否符合正则表达式reg
      *
      * @param str 需要处理的字符串
      * @param reg 正则
@@ -176,7 +176,7 @@ public final class RegUtil {
     }
 
     /**
-     * 获取符合reg正则表达式的字符串在String中出现的次数
+     * 	获取符合reg正则表达式的字符串在String中出现的次数
      *
      * @param str 需要处理的字符串
      * @param reg 正则
@@ -194,7 +194,7 @@ public final class RegUtil {
 
 
     /**
-     * 判断是否是符合邮箱
+     * 	判断是否是符合邮箱
      *
      * @param email 判断的字符串
      * @return 是否是符合的邮箱

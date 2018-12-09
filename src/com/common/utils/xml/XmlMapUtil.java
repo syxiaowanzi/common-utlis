@@ -17,8 +17,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
- * 微信开发所需工具类（已测）
- * 注:该工具适用于一层xml格式,存在二级element时，不适用
+ * 	微信开发所需工具类（已测）
+ * 	注:该工具适用于一层xml格式,存在二级element时，不适用
  * @author wangming
  * @see 转换的xml发送前需去换行符.replaceAll("\n|\r", "")
  * @see 因微信接口在后期发展会增加返回字段，所以xml先转map再转obj
@@ -65,7 +65,7 @@ public class XmlMapUtil {
     }
 
     /**
-     * 将Map转换为XML格式的字符串
+     * 	将Map转换为XML格式的字符串
      *
      * @param data Map类型数据
      * @return XML格式的字符串

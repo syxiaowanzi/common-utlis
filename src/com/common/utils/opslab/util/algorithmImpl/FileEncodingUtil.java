@@ -9,11 +9,11 @@ import java.nio.charset.UnsupportedCharsetException;
 import java.util.List;
 
 /**
- * 文件编码相关的一些工具函数
+ * 	文件编码相关的一些工具函数
  */
 public class FileEncodingUtil {
     /**
-     * 把指定文件或目录转换成指定的编码
+     *	 把指定文件或目录转换成指定的编码
      *
      * @param fileName        要转换的文件
      * @param fromCharsetName 源文件的编码
@@ -24,7 +24,7 @@ public class FileEncodingUtil {
     }
 
     /**
-     * 把指定文件或目录转换成指定的编码
+     *	 把指定文件或目录转换成指定的编码
      *
      * @param file            要转换的文件或目录
      * @param fromCharsetName 源文件的编码
@@ -35,7 +35,7 @@ public class FileEncodingUtil {
     }
 
     /**
-     * 把指定文件或目录转换成指定的编码
+     * 	把指定文件或目录转换成指定的编码
      *
      * @param fileName        要转换的文件或目录
      * @param fromCharsetName 源文件的编码
@@ -47,7 +47,7 @@ public class FileEncodingUtil {
     }
 
     /**
-     * 把指定文件或目录转换成指定的编码
+     * 	把指定文件或目录转换成指定的编码
      *
      * @param file            要转换的文件或目录
      * @param fromCharsetName 源文件的编码
@@ -72,7 +72,7 @@ public class FileEncodingUtil {
     }
 
     /**
-     * 以指定编码方式读取文件，返回文件内容
+     * 	以指定编码方式读取文件，返回文件内容
      *
      * @param file            要转换的文件
      * @param fromCharsetName 源文件的编码
@@ -95,7 +95,7 @@ public class FileEncodingUtil {
     }
 
     /**
-     * 以指定编码方式写文本文件，存在会覆盖
+     *	 以指定编码方式写文本文件，存在会覆盖
      *
      * @param file          要写入的文件
      * @param toCharsetName 要转换的编码
